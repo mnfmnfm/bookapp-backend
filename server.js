@@ -12,7 +12,10 @@ const app = express();
 app.use(cors());
 
 app.get('/books', (req, res) => {
-  res.send('books are great');
+  client.query('SELECT book_id, title, author, image_url FROM books;')
+    .then( result => {
+      res.send(result.rows);
+    })
 });
 
 app.use('*', (req, res) => {
