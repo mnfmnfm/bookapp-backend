@@ -8,5 +8,9 @@
     "start": "node server.js"
   },
   "author": "Michelle Ferreirae",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pg": "^7.4.3"
+  }
 }
