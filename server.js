@@ -11,6 +11,24 @@ client.on('error', err => console.log(err));
 const app = express();
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('you made it');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.get('/books', (req, res) => {
   client.query('SELECT book_id, title, author, image_url FROM books;')
     .then( result => {
