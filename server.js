@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
   res.send('you made it');
 });
 
+app.get('/cool/stuff/here', (req, res) => {
+  res.send('cool pic of a dog probably');
+});
+
 
 
 
